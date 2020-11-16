@@ -1,0 +1,263 @@
+*{
+    margin: 0px;
+    font-weight: 16px !important;
+}
+.topMenu{
+    background: #111216;
+    width: 100%;
+    height: 50px;
+    padding: 5px 0px 5px 0px;
+}
+#logo{
+    margin-left: 10px;
+    display: inline-block;
+    height: 50px;
+    width: 80px;
+    background-repeat: no-repeat;
+    background-image: url("../img/DownTubeLogo.png");
+    background-size: 80px 50px;
+}
+#settingsTop{
+    margin-left: 10px;
+    float: right;
+    display: inline-block;
+    height: 50px;
+    width: 80px;
+    background-repeat: no-repeat;
+    background-image: url("../img/settings.png");
+    background-size: 50px 50px;
+}
+#loading{
+    text-align: center;
+    background: #0E1E2F;
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+#panel{
+    width:100%;
+    height: calc(100vh - 60px);
+    background: url(../img/appbg.jpeg);
+}
+#success{
+    color: white;
+    display: none;
+    background: green;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    border: darkgreen solid 2px;
+    border-radius: 10px;
+    padding: 10px;
+}
+#warning{
+    color: white;
+    display: none;
+    background: red;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    border: darkred solid 2px;
+    border-radius: 10px;
+    padding: 10px;
+}
+#downloading{
+    color: white;
+    display: none;
+    background: orange;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    border: darkorange solid 2px;
+    border-radius: 10px;
+    padding: 10px;
+}
+#dlVideo{
+    text-align: center;
+}
+.inputZone{
+    position: absolute;
+    width: 450px;
+    height: 100px;
+    top: 220px;
+    left: 130px;
+}
+#videoUrlInput{
+    border-radius: 10px;
+    background-color: purple;
+    border: 2px solid purple;
+    color: white;
+    font-size: 20px;
+    width: 450px;
+    padding: 0px 50px 0px 5px;
+    box-shadow: 2px 2px 5px black;
+}
+#videoUrlInput:focus{
+    border: 2px solid yellow;
+}
+#videoUrlButton{
+    position: absolute;
+    top: 4px;
+    right: -53px;
+    background:rgba(0, 0, 0, 0);
+    color: yellow;
+    border: 0px;
+    font-weight: bold;
+}
+#clear{
+    margin: auto;
+    display: none;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 2px 2px 5px black;
+    background: purple;
+    color: yellow;
+    width: 50px;
+    font-weight: bold;
+    cursor: default;
+
+}
+
+#videoShow{
+    overflow: hidden;
+    text-align:left;
+    display: none;
+    position: fixed;
+    top: 100px;
+    left: 100px;
+    right: 100px;
+    bottom: 100px;
+    border: 1px solid #1112167e;
+    border-radius: 10px;
+    background: url(../img/bg.png);
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+    box-shadow: black 2px 2px 5px;
+}
+#videoThumbnail{
+    border-radius: 10px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+#videoHeader{
+    position: absolute;
+    left: 175px;
+    top: 5px;
+    right: 20px;
+    max-height: 94px;
+    overflow: auto;
+    text-shadow: black 2px 2px 5px;
+}
+#videoName{
+    font-weight: bold;
+}
+#closeVideoShow{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    border: 0px;
+    border-radius: 10px;
+    font-weight: bold;
+    background: rgba(17, 18, 22, 0.8);
+}
+#videoDescription{
+    position: absolute;
+    top: 110px;
+    left: 0px;
+    right: 0px;
+    background: rgba(17, 18, 22, 0.8);
+    padding: 5px;
+    max-height: 243px;
+    overflow: auto;
+}
+#downloadBar{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    height: 25px;
+    background: rgba(17, 18, 22, 1);
+    padding: 5px;
+}
+#videoFormat{
+    border:1px solid darkslategray;
+    border-radius: 5px;
+    background: rgb(17, 18, 22);
+    color: white;   
+    width: 112px;
+}
+#downloadBar button{
+    width: 115px;
+    border:1px solid darkslategray;
+    border-radius: 5px;
+    background: rgb(17, 18, 22);
+    color: white;
+    -webkit-transition: all .5s;
+}
+#downloadBar button:hover{
+    background: darkslategray;
+}
+#settings{
+    text-align: center;
+}
+#videoLocation{
+    border-radius: 10px 0px 0px 10px;
+    background-color: purple;
+    border: 2px solid purple;
+    color: white;
+    width: 300px;
+    padding: 0px 5px 0px 5px;
+    box-shadow: 2px 2px 5px black;
+}
+#mp3Location{
+    border-radius: 10px 0px 0px 10px;
+    background-color: purple;
+    border: 2px solid purple;
+    color: white;
+    width: 300px;
+    padding: 0px 5px 0px 5px;
+    box-shadow: 2px 2px 5px black;
+}
+.settingInputZone{
+    margin: auto;
+}
+#chooseVideoLocation{
+    background:purple;
+    color: yellow;
+    border: 0px;
+    font-weight: bold;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 2px 2px 5px black;
+}
+#chooseMP3Location{
+    background:purple;
+    color: yellow;
+    border: 0px;
+    font-weight: bold;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 2px 2px 5px black;
+}
+
+#audioPlayZone{
+    position: fixed;
+    bottom: 62px;
+    left: 0px;
+    right: 0px;
+    display: none;
+}
+#videoPlayer{
+    display: none;
+    position: absolute;
+    top: 110px;
+    left: 0px;
+    right: 0px;
+    padding: 5px;
+    max-height: 240px;
+    max-width: 590px;
+    overflow: hidden;
+}

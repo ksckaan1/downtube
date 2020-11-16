@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/jquery.js"></script>
+</head>
+<body>
+    <div class="topMenu">
+        <div id="logo"></div>
+        <div id="settingsTop"></div>
+
+    </div>
+    <div id="panel"></div>
+    <script src="./js/script.js"></script>
+    <script>
+    $(document).ready(function(){
+        $.ajax({
+            type: "GET",
+            url: "video.html?i=12",
+            success: function (response) { 
+                $("#panel").html(response);
+            }
+        });
+    })
+    $("#logo").click(function(){
+        $.ajax({
+            type: "GET",
+            url: "video.html?u=123",
+            success: function (response) { 
+                $("#panel").html(response);
+            }
+        });
+    })
+    $("#settingsTop").click(function(){
+        $.ajax({
+            type: "GET",
+            url: "settings.html",
+            success: function (response) { 
+                $("#panel").html(response);
+            }
+        });
+    })
+    </script>
+</body>
+</html>

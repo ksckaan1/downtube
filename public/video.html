@@ -1,0 +1,45 @@
+<div id="dlVideo">
+    
+
+    <div id="success"></div>
+    <div id="warning"></div>
+    <div id="downloading"></div>
+    <br><br>
+    <img src="./img/videoUrl.png" alt=""><br>
+    <br><h1>Input a YouTube Video URL</h1>
+    <div class="inputZone">
+        <input type="text" id="videoUrlInput">
+        <button id="videoUrlButton">Show</button>
+        <div id="clear">Clear</div>
+        <div id="loading"><img width="400px" src="./img/loading.gif" alt="loading"></div>
+    </div>
+    
+    <div id="videoShow">
+        <img id="videoThumbnail" src=""><br>
+        <div id="videoHeader">
+            <span id="videoName">Video Name</span><br>
+            <span id="uploader">Uploader</span><br>
+            <span id="views">Views</span><br>
+            <span id="duration">Duration</span>
+        </div>
+        <div id="videoDescription">
+            Video Description..
+        </div>
+        <iframe name="videoPlayer" id="videoPlayer" src=""
+   width="590" height="240" frameborder="0" allowfullscreen></iframe>
+        <div id="downloadBar">
+            <select id="videoFormat">
+            </select>
+            <button id="downloadButton" data="">Download Video</button>
+            <button id="watchVideoButton" data="">Watch Video</button>
+            <button id="downloadMP3Button" data="">Download Audio</button>
+            <button id="playAudioButton" data="">Play Audio</button>
+        </div>
+        
+        <button id="closeVideoShow">X</button>
+    </div>
+    <div id="audioPlayZone">
+        <audio id="audioPlayer" style="width: 600px;" controls src=""></audio>
+    </div>
+    <script src="./js/script.js"></script>
+</div>
